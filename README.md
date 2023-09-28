@@ -8,4 +8,4 @@
 
 2. В папке проекта инициализировать nest проект
 
-   `nest new project-name`
+   `nest new project-name`1
