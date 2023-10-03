@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { HydratedDocument } from 'mongoose';
+import { Document } from 'mongoose';
+import { ObjectId } from 
 
 export type TrackDocument = Track & Document;
 
@@ -23,7 +24,7 @@ export class Track {
   @Prop()
   audio: string;
 
-  @Prop({type: [{type:}]}})
+  @Prop({ type: [{ type: ObjectId, ref: 'Comment' }] })
   comments: Comment[];
 }
 
