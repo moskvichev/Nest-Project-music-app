@@ -13,6 +13,9 @@ export class Track {
   artist: string;
 
   @Prop()
+  track: string;
+
+  @Prop()
   text: string;
 
   @Prop()
