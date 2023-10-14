@@ -8,7 +8,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: path.resolve(__dirname, '..', 'client'),
+      rootPath: path.resolve(__dirname, 'static'),
     }),
     MongooseModule.forRoot(
       'mongodb+srv://moskvicheveg:admin@cluster0.hj7ihbn.mongodb.net/?retryWrites=true&w=majority',
