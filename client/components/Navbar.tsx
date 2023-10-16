@@ -18,8 +18,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import router, { Router } from 'next/router';
 
 const drawerWidth = 240;
+const menuItems = [
+  { text: 'Main (Главная)', href: '/' },
+  { text: 'Tracks (Список треков)', href: '/tracks' },
+  { text: 'Albums (Список Альбомов)', href: '/albums' },
+];
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
   open?: boolean;
@@ -130,16 +136,14 @@ export default function Navbar() {
         </List>
         <Divider /> */}
         <List>
-          {['Main (Главная)', 'Tracks (Список треков)', 'Albums (Список Альбомов)'].map(
-            (text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ),
-          )}
+          {menuItems.map(({ text, href }, index) => (
+            <ListItem key={href} onClick={() => router.push(href)} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
         </List>
       </Drawer>
       {/* <Main open={open}>
