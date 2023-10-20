@@ -7,7 +7,7 @@ const Create = () => {
     <MainLayout>
       <Grid container>
         <Card>
-          <Grid>fc</Grid>
+          <Grid>страница create</Grid>
         </Card>
       </Grid>
     </MainLayout>
