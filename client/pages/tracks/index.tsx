@@ -5,6 +5,14 @@ import React from 'react';
 
 const Index = () => {
   const router = useRouter();
+  const tracks = ITracks[] = [
+    {_id: '1', name: 'Трек 1', artist: 'Исполнитель 1', text: 'Some text 1', listens: 5, audio: '', picture: ''},
+    {_id: '2', name: 'Трек 1', artist: 'Исполнитель 2', text: 'Some text 2', listens: 5, audio: '', picture: ''},
+    {_id: '3', name: 'Трек 1', artist: 'Исполнитель 3', text: 'Some text 3', listens: 5, audio: '', picture: ''}
+
+  ]
+
+  
   return (
     <>
       <MainLayout>
