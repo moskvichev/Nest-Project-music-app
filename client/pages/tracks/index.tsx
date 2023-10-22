@@ -35,7 +35,7 @@ const Index = () => {
       text: 'Some text 3',
       listens: 5,
       audio: 'http://localhost:5000/audio/f76ae585-ced1-48d0-807a-cd9f8adc80ce.mp3',
-      picture: 'http://localhost:5000/image/fc74666c-90cd-4bb5-b798-97b6d819d959.JPG',
+      picture: 'http://localhost:5000/image/1cb8eb27-493b-4f66-b47c-f2cf3125bd60.JPG',
       comments: [],
     },
   ];
