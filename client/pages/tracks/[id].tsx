@@ -15,7 +15,7 @@ const TrackPage = () => {
     comments: [],
   };
   const router = useRouter();
-  return <MainLayout>Track page</MainLayout>;
+  return <MainLayout>Track page main</MainLayout>;
 };
 
 export default TrackPage;
