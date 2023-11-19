@@ -5,6 +5,8 @@ interface StepWrapperProps {
   activeStep: number;
 }
 
+const steps = ['Информация о треке', 'Загрузите обложку', 'Загрузите  трек'];
+
 const StepWrapper: React.FC<StepWrapperProps> = ({ activeStep, children }) => {
   return (
     <Container>
