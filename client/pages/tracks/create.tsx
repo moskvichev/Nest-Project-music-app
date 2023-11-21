@@ -14,7 +14,9 @@ const Create = () => {
   return (
     <MainLayout>
       <StepWrapper activeStep={activeStep}>
-        <h1>Загрузка трека</h1>
+        {activeStep === 0 && <h1>STEP 1</h1>}
+        {activeStep === 1 && <h1>STEP 2</h1>}
+        {activeStep === 2 && <h1>STEP 3</h1>}
       </StepWrapper>
       <Grid container justifyContent="space-between">
         <Button onClick={back}>Назад</Button>
