@@ -20,7 +20,7 @@ const Create = () => {
       </StepWrapper>
       <Grid container justifyContent="space-between">
         <Button onClick={back}>Назад</Button>
-        <Button onClick={next}>Далее dd</Button>
+        <Button onClick={next}>Далее</Button>
       </Grid>
     </MainLayout>
   );
