@@ -23,7 +23,7 @@ const Player = () => {
       </IconButton>
       <Grid container direction="column" style={{ width: 200, margin: '0 20px' }}>
         <div>{track.name}</div>
-        <div style={{ fontSize: 12, color: 'grey' }}>{track.artist}</div>
+        <div style={{ fontSize: 11, color: 'grey' }}>{track.artist}</div>
       </Grid>
       <TrackProgress left={0} right={100} onChange={() => ({})} />
     </div>
