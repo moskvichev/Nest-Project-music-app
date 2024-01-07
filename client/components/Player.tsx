@@ -1,5 +1,5 @@
-import { Pause, PlayArrow } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
+import { Pause, PlayArrow, VolumeUp } from '@mui/icons-material';
+import { Grid, IconButton } from '@mui/material';
 import * as React from 'react';
 import styles from '../styles/Player.module.scss';
 import TrackProgress from './TrackProgress';
@@ -23,8 +23,10 @@ const Player = () => {
       </IconButton>
       <Grid container direction="column" style={{ width: 200, margin: '0 20px' }}>
         <div>{track.name}</div>
-        <div style={{ fontSize: 11, color: 'grey' }}>{track.artist}</div>
+        <div style={{ fontSize: 12, color: 'grey' }}>{track.artist}</div>
       </Grid>
+      <TrackProgress left={0} right={100} onChange={() => ({})} />
+      <VolumeUp style={{ marginLeft: 'auto' }} />
       <TrackProgress left={0} right={100} onChange={() => ({})} />
     </div>
   );
