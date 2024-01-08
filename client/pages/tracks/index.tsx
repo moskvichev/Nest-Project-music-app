@@ -1,9 +1,12 @@
 import TrackList from '@/components/Tracklist';
+import { useTypedSelector } from '@/hooks/useTypedSelector';
 import MainLayout from '@/layouts/MainLayout';
 import { ITrack } from '@/types/track';
 import { Box, Button, Card, Grid } from '@mui/material';
 import { useRouter } from 'next/router';
 import React from 'react';
+import Player from '@/components/Player';
+import { useActions } from '@/hooks/useActions';
 
 const Index = () => {
   const router = useRouter();
