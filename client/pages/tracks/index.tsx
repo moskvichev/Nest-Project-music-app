@@ -14,7 +14,7 @@ const Index = () => {
     {
       _id: '1',
       name: 'Трек 1',
-      artist: 'Исполнитель 1',
+      artist: 'Исполнитель 1-1',
       text: 'Some text 1',
       listens: 5,
       audio: 'http://localhost:5000/audio/50d4118c-0281-4832-820c-7ced79d9bddd.mp3',
