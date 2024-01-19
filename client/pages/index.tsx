@@ -9,7 +9,7 @@ const Index = () => {
         <div className="center">
           <h1>Welcome to main page.</h1>
           <h3>Here the best music tracks!</h3>
-          <Button>Push the button</Button>
+          <Button>Push the button </Button>
         </div>
       </MainLayout>
 
